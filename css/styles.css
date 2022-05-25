@@ -51,9 +51,15 @@ body {
 }
 
 section {
-    padding-top: 94px;
     padding-bottom: 94px;
 }
+
+.hero,
+.about {
+    padding-top: 94px;
+}
+
+
 
 /* =============== COMPONENTS =============== */
 .modal-btn {
@@ -89,8 +95,6 @@ section {
 .logo-on-light {
     display:block;
     margin-right: 93px;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 
 .logo-one {
@@ -146,7 +150,11 @@ section {
 }
 
 .page-header {
-    border-bottom: var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+.page-header-light {
+    border-bottom: none;
 }
 
 .header-container {
@@ -170,7 +178,6 @@ section {
 .header-contacts {
     margin-left: auto;
     display: flex;
-    justify-content: flex-end;
 }
 
 .header-e-mail {
@@ -191,22 +198,25 @@ section {
     text-transform: uppercase;
     color: #fff;
     min-height: 60px;
-    padding: 106px 7px 90px;
-}
+    max-width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+ }
+    
 
 .temp-bg {
     background-color: #2F303A;
 }
 
 .hero-modal-btn {
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
     background: #2196F3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     width: 200px;
     min-height: 50px; 
-    margin: 0px 500px 106px;
+    margin: 0 auto;
 }
 
 .hero-modal-btn:hover,
@@ -246,6 +256,7 @@ section {
 
 .about-strenghts-item:not(:last-child) {
     margin-right: 30px; 
+    max-width: 270px;;
 }
 
 /* =============== /ABOUT =============== */
@@ -255,7 +266,6 @@ section {
     display:flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-left: -30px;
     margin-top: -30px;
 }
@@ -310,7 +320,27 @@ section {
 /* =============== /OUR TEAM =============== */
 
 /* =============== PORTFOLIO =============== */
-.modal-btn-unselected {font-style: normal;
+.portfolio-modal-btn {
+    padding: 6px 22px;
+}
+
+.modal-btn-selected {
+    font-family: var(--primary-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-color: transparent;
+}
+
+.modal-btn-unselected {
+    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -328,6 +358,7 @@ section {
     text-transform: none;
     background-color: var(--accent-color);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filters {
@@ -360,7 +391,6 @@ section {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-between;
     margin-left: -30px;
     margin-top: -30px;
 
@@ -371,7 +401,6 @@ section {
     flex-basis: calc((100% - 90px) / 3);    
     margin-left: 30px;
     margin-top: 30px;
-    outline: 1px solid #EEEEEE;
 
 }
 
@@ -399,7 +428,6 @@ section {
 
 /* =============== FOOTER =============== */
 .footer-logo {
-    padding-top: 60px;
     margin-bottom: 20px;;
 }
 
@@ -411,7 +439,11 @@ section {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #fff;
+}
 
+.footer-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .address-link {
@@ -437,8 +469,7 @@ section {
     color:aliceblue;
 }
 
-.footer-contacts {
-    padding-bottom: 60px;
+.footer-contacts-item:not(:last-child){
+    margin-bottom: 9px;
 }
-
 /* =============== /FOOTER =============== */
