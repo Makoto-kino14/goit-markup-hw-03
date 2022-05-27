@@ -52,14 +52,17 @@ body {
 
 section {
     padding-bottom: 94px;
-}
-
-.hero,
-.about {
     padding-top: 94px;
 }
 
+.services {
+    padding-top: 0;
+}
 
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
 
 /* =============== COMPONENTS =============== */
 .modal-btn {
@@ -150,12 +153,9 @@ section {
 }
 
 .page-header {
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px #ECECEC;
 }
 
-.page-header-light {
-    border-bottom: none;
-}
 
 .header-container {
     display: flex;
@@ -230,6 +230,11 @@ section {
 /* =============== /HERO =============== */
 
 /* =============== ABOUT =============== */
+.hero {
+    padding-top: 200px;
+    padding-bottom: 200px; 
+}
+
 .about-strenghts {
     display: flex;
     align-items: center;
@@ -423,12 +428,16 @@ section {
 
 .project-wrapper {
     padding: 20px 24px;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
 }
 /* =============== /PORTFOLIO =============== */
 
 /* =============== FOOTER =============== */
 .footer-logo {
-    margin-bottom: 20px;;
+    margin-bottom: 20px;
+    display: block;
 }
 
 .logo-on-dark-two {
@@ -439,11 +448,6 @@ section {
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: #fff;
-}
-
-.footer-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
 }
 
 .address-link {
